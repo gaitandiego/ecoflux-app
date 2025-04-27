@@ -24,7 +24,6 @@ import SmallLogo from '../recursos/img/small-logo.png';
 import profile from '../recursos/img/profile.jpg';
 
 
-const baseUrl = import.meta.env.VITE_API_URL;
 
 // Navegacion superior 
 const NavigationAuth = () => {
@@ -42,9 +41,9 @@ const NavigationAuth = () => {
             <Navbar fixed="top" className="top-menu">
                 <Link to="/home/" className={`navbar-brand ${sideMenu ? 'navbar-logo' : ''}`}>
                     {/* Large logo */}
-                    <Image src={baseUrl + "/" + Logo} alt="Logo" className="large-logo" />
+                    <Image src={Logo} alt="Logo" className="large-logo" />
                     {/* Small logo */}
-                    <Image src={baseUrl + "/" + SmallLogo} alt="Small Logo" className="small-logo" />
+                    <Image src={SmallLogo} alt="Small Logo" className="small-logo" />
                 </Link>
 
                 <Navbar.Toggle aria-controls="basic-navbar-nav" />
@@ -61,31 +60,6 @@ const NavigationAuth = () => {
                 <Navbar.Collapse id="basic-navbar-nav">
 
                     <Nav className="ml-auto right-nav">
-                        {/* <NavDropdown
-                            title={
-                                <div className="count-info">
-                                    <Icon.Bell
-                                        className="icon"
-                                    />
-                                    <span className="ci-number">
-                                        <span className="ripple"></span>
-                                        <span className="ripple"></span>
-                                        <span className="ripple"></span>
-                                    </span>
-                                </div>
-                            }
-                            id="basic-nav-dropdown" className="message-box">
-
-
-
-
-                            <Link to="/notifications/" className="dropdown-item">
-                                Check all notifications
-                                <Icon.ChevronRight
-                                    className="icon"
-                                />
-                            </Link>
-                        </NavDropdown> */}
 
                         <NavDropdown
                             title={
@@ -95,18 +69,6 @@ const NavigationAuth = () => {
                                 </div>
                             }
                             id="basic-nav-dropdown" className="profile-nav-item">
-                            {/* <NavLink to="#" className="dropdown-item">
-                                <Icon.User
-                                    className="icon"
-                                />
-                                Perfil
-                            </NavLink>
-                            <NavLink to="#" className="dropdown-item">
-                                <Icon.Inbox
-                                    className="icon"
-                                />
-                                Tickets
-                            </NavLink> */}
 
                             <SignOutButton />
                         </NavDropdown>

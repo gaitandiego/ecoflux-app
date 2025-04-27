@@ -13,7 +13,7 @@ import FormDataView from './FormDataView';
 
 // Llamamos el nombre del endpoint 
 
-const apiUrl = import.meta.env.VITE_API_ESTADOS;
+const apiUrl = import.meta.env.VITE_API_USUARIOS;
 
 // Componente para agregar
 const ItemAgregar = props => {
@@ -28,14 +28,14 @@ const ItemAgregar = props => {
 
             const datosItem = {
                 ...data,
-                color: data.color === "#000000" ? null : data.color,
-                tipo: data.tipo.value,
+                empresa: data.empresa.value,
+                rol: data.rol.value,
             }
             // Enviar peticion al backend 
 
             await cliente().post(apiUrl, datosItem)
             toast.success(TEXT.ALERT_AGREGADO_EXITO)
-            props.navigate(ROUTES.ESTADOS);
+            props.navigate(ROUTES.USUARIOS);
             setCargandoBoton(false)
 
         } catch (error) {
@@ -51,7 +51,7 @@ const ItemAgregar = props => {
             {cargando && <Loader message="Loading..." />}
             <div className="main-content-header">
                 <div className='d-flex justify-content-between align-items-center'>
-                    <h1>{TEXT.ESTADOS_ADD_TITULO}</h1>
+                    <h1>{TEXT.USUARIOS_ADD_TITULO}</h1>
                     <button onClick={() => props.goBack()} className='btn btn-primary boton_estandar'><Icon.X className="icon wh-14" /></button>
                 </div>
             </div>
@@ -61,7 +61,7 @@ const ItemAgregar = props => {
                     <div className="card mb-4">
                         <div className="card-body">
                             <div className="card-header">
-                                <h5 className="card-title">{TEXT.ESTADOS_FORM_TITULO}</h5>
+                                <h5 className="card-title">{TEXT.USUARIOS_FORM_TITULO}</h5>
                             </div>
 
                             <Form onSubmit={handleSubmit(onSubmit)}>

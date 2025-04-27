@@ -10,19 +10,10 @@ import NotFound from "../pantallas/NotFound";
 import { compose } from 'react-recompose';
 import { withRouter } from '../router/withRouter';
 
-import Loader from '../componentes/Common/Loader';
-
 // Valida si las rutas existen
 
-const UseValidateRoutes = ({ children, removerNav, ...props }) => {
-
+const UseValidateRoutes = ({ children, ...props }) => {
     const { authUser } = useContext(AuthUserContext);
-    // Carga el loading 
-
-    if (authUser && removerNav) {
-        return (React.cloneElement(children, { ...props }))
-    }
-
     // valida si el usuario esta registrado y tiene los permisos de vista 
     if (authUser) {
         return (<div className="page-wrapper">

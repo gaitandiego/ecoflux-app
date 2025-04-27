@@ -138,35 +138,10 @@ const Tabla = ({ columns, data, actions, title, cargando, components, CuentasFil
 
                         }}
 
-                        onFilterChange={(appliedFilters) => {
-
-                            if (CuentasFiltros) {
-                                let filtros = []
-                                //const filtered = data.filter(row => row.tableData.vendedor === 'Tecnosoluciones Comercio'); // Modifica este filtro según la estructura de tus datos
-                                console.log('appliedFilters', appliedFilters)
-                                appliedFilters.map(item => {
-                                    if (item.value.length > 0) {
-                                        if (item.value.length > 1) {
-                                            item.value.map((item2, index) => {
-                                                console.log('index', index)
-                                                filtros.push({ columna: item.column.field, value: item.value[index] })
-                                            })
-                                        } else {
-                                            filtros.push({ columna: item.column.field, value: item.value[0] })
-                                        }
-                                    }
-                                })
-
-                                setFilteredData(filtros)
-                            }
-
-                        }}
-
-
                         options={{
                             selection: false,
                             groupOrder: true,
-                            filtering: true,
+                            filtering: false,
                             sorting: true,
                             pageSize: data.length <= 5 ? 5 : data.length <= 10 ? 10 : 20,
                             exportButton: true, // Mostrar el botón de exportación

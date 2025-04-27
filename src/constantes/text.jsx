@@ -8,7 +8,6 @@ export const MENU_PROVEEDORES = 'Inversionistas';
 export const MENU_AJUSTES_GENERALES = 'Ajustes Generales';
 export const MENU_MEDIOS_PAGO = 'Medios Pago';
 export const MENU_ROLES = 'Roles';
-export const MENU_ESTADOS = 'Estados';
 export const MENU_METODOS_PAGO = 'Medios de pago';
 export const MENU_CREDITOS = 'Creditos';
 export const MENU_ABONOS = 'Abonos';
@@ -260,7 +259,7 @@ export const FORM_COLOR_TERCIARIO = 'Terciario'
 export const FORM_IMPUESTO = 'Impuesto'
 export const FORM_TIPO_PRODUCTO = 'Tipo producto'
 export const FORM_PRECIO_REBAJADO = 'Precio Rebajado'
-export const FORM_ESTADOS = 'Estados'
+export const FORM_USUARIOS = 'Usuarios'
 export const FORM_VISUALIZACION = 'Visualización'
 export const FORM_COMBOS = 'Combos/Insumos'
 export const FORM_INVENTARIO = 'Inventario'
@@ -427,13 +426,13 @@ export const PROVEEDORES_EDIT_TITULO = 'Editar Inversionista'
 export const PROVEEDORES_FORM_EDIT_TITULO = 'Editar Inversionista'
 
 
-/** Estados **/
-export const ESTADOS_TITULO = 'Estados'
-export const ESTADOS_TITULO_TABLA = 'Lista de estados'
-export const ESTADOS_ADD_TITULO = 'Agregar estados'
-export const ESTADOS_FORM_TITULO = 'Agregar estado'
-export const ESTADOS_EDIT_TITULO = 'Editar estado'
-export const ESTADOS_FORM_EDIT_TITULO = 'Editar estado'
+/** Usuarios **/
+export const USUARIOS_TITULO = 'Usuarios'
+export const USUARIOS_TITULO_TABLA = 'Lista de usuarios'
+export const USUARIOS_ADD_TITULO = 'Agregar usuarios'
+export const USUARIOS_FORM_TITULO = 'Agregar estado'
+export const USUARIOS_EDIT_TITULO = 'Editar estado'
+export const USUARIOS_FORM_EDIT_TITULO = 'Editar estado'
 
 /** Abonos **/
 export const ABONOS_TITULO = 'Abonos'
@@ -537,7 +536,7 @@ export const ALERT_CIERRE_CAJA = 'Creado con exito'
 export const ALERT_FACTURA_REALIZADA_EXITO = 'Pedido Realizado'
 export const ALERT_PASARELA_ERROR = 'Por favor valide los campos seleccionados'
 export const ALERT_IMAGEN_ERROR = 'El peso de la imagen es superior a 2MB'
-export const ALERT_FALTAN_ESTADOS = 'Seleccione una estado'
+export const ALERT_FALTAN_USUARIOS = 'Seleccione una estado'
 export const ALERT_FALTAN_VISUALIZACION = 'Seleccione una visualización'
 export const ALERT_FALTAN_CAJEROS = 'Seleccione un cajero'
 export const ALERT_FALTAN_PRODUCTOS_COMBOS = 'Seleccione un producto o combo'

@@ -10,7 +10,7 @@ import * as TEXT from '../../constantes/text';
 import { cliente } from '../../helpers/fetch';
 
 // Llamamos el nombre del endpoint 
-const apiUrl = import.meta.env.VITE_API_ESTADOS;
+const apiUrl = import.meta.env.VITE_API_USUARIOS;
 
 // Componente para ver 
 const ItemLista = props => {
@@ -25,18 +25,9 @@ const ItemLista = props => {
         {
             title: '#', render: (rowData) => rowData.tableData.id + 1
         },
-        { title: TEXT.TABLAS_NOMBRE, field: "nombre" },
+        { title: "Nombre", field: "nombre_usuario" },
         {
-            title: TEXT.TABLAS_TIPO, field: "tipo",
-        },
-        {
-            title: TEXT.TABLAS_COLOR, field: "color", render: rowData => <div style={{
-                backgroundColor: rowData.color,
-                padding: "5px 10px",
-                borderRadius: "5px",
-                color: "#fff",
-                height: "20px",
-            }}></div>
+            title: "Email", field: "email",
         },
     ]);
 
@@ -121,12 +112,12 @@ const ItemLista = props => {
         {
             icon: () => <div className='boton_estandar_blanco'><Icon.Edit3 size={16} /></div>,
             tooltip: TEXT.BTN_EDITAR,
-            onClick: (event, rowData) => props.navigate(`${ROUTES.ESTADOS}/editar/${rowData.id}`, { state: rowData }),
+            onClick: (event, rowData) => props.navigate(`${ROUTES.USUARIOS}/editar/${rowData.id}`, { state: rowData }),
         },
         {
             icon: () => <div className='boton_estandar_blanco'><Icon.Trash2 size={16} /></div>,
             tooltip: TEXT.BTN_ELIMINAR,
-            onClick: (event, rowData) => toggle(rowData.id, rowData.nombre)
+            onClick: (event, rowData) => toggle(rowData.id, rowData.nombre_usuario)
         }
     ]
 
@@ -136,13 +127,13 @@ const ItemLista = props => {
         <>
             <div className="main-content-header">
                 <div className='d-flex justify-content-between align-items-center'>
-                    <h1>{TEXT.ESTADOS_TITULO}</h1>
-                    <button onClick={() => props.navigate(ROUTES.ESTADOS_ADD, { state: { tipo: 'Producto' } })} className='btn btn-primary boton_estandar'><Icon.Plus className="icon wh-14" /></button>
+                    <h1>{TEXT.USUARIOS_TITULO}</h1>
+                    <button onClick={() => props.navigate(ROUTES.USUARIOS_ADD)} className='btn btn-primary boton_estandar'><Icon.Plus className="icon wh-14" /></button>
                 </div>
             </div>
             <Row>
                 <Col xl={12}>
-                    <Tabla data={items} actions={actions} title={TEXT.ESTADOS_TITULO_TABLA} columns={columns} cargando={cargando} />
+                    <Tabla data={items} actions={actions} title={TEXT.USUARIOS_TITULO_TABLA} columns={columns} cargando={cargando} />
                 </Col>
             </Row>
 

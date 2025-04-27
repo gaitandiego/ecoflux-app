@@ -11,9 +11,9 @@ import UseValidateRoutes from '../../hooks/UseValidateRoutes';
 import IngresoPage from '../Acceso';
 import RecuperarPage from '../Acceso/recuperar';
 
-import EstadosPage from '../Estados';
-import EstadosAddPage from '../Estados/agregar';
-import EstadosEditPage from '../Estados/editar';
+import UsuariosPage from '../Usuarios';
+import UsuariosAddPage from '../Usuarios/agregar';
+import UsuariosEditPage from '../Usuarios/editar';
 
 import NotFound from '../NotFound';
 
@@ -32,9 +32,9 @@ const App = () => (
 
 			{/* Rutas protegidas con login y scope */}
 
-			<Route path={ROUTES.ESTADOS} element={<UseValidateRoutes ><EstadosPage /></UseValidateRoutes>} />
-			<Route path={ROUTES.ESTADOS_ADD} element={<UseValidateRoutes ><EstadosAddPage /></UseValidateRoutes>} />
-			<Route path={ROUTES.ESTADOS_EDIT} element={<UseValidateRoutes ><EstadosEditPage /></UseValidateRoutes>} />
+			<Route path={ROUTES.USUARIOS} element={<UseValidateRoutes ><UsuariosPage /></UseValidateRoutes>} />
+			<Route path={ROUTES.USUARIOS_ADD} element={<UseValidateRoutes ><UsuariosAddPage /></UseValidateRoutes>} />
+			<Route path={ROUTES.USUARIOS_EDIT} element={<UseValidateRoutes ><UsuariosEditPage /></UseValidateRoutes>} />
 			{/* Rutas protegidas */}
 
 			<Route path='*' element={<NotFound />} />

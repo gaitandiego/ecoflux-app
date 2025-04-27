@@ -1,0 +1,35 @@
+.image-container {
+    margin: 5px;
+}
+
+.image-container {
+    position: relative;
+}
+
+.icon-remove {
+    position: absolute;
+    border: 0;
+    z-index: 99;
+    top: -2px;
+    right: -1px;
+    cursor: pointer;
+    padding: 4px;
+    border-radius: 100px;
+    width: 17px;
+    height: 17px;
+    box-shadow: 0 5px 11px 0 rgba(0, 0, 0, .18),
+        0 4px 15px 0 rgba(0, 0, 0, .15);
+    background-color: #f70000;
+    display: flex;
+    justify-content: center;
+}
+
+.icon-remove>i {
+    color: #ffffff;
+    font-size: 9px;
+    position: absolute;
+}
+
+.btn-remove {
+    padding: 0px;
+}

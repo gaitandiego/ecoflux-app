@@ -1,0 +1,49 @@
+{
+  "name": "ecoflux",
+  "private": true,
+  "version": "0.1.0",
+  "homepage": "/",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "lint": "eslint . --ext js,jsx --report-unused-disable-directives --max-warnings 0",
+    "preview": "vite preview",
+    "stylus": "stylus -u nib -c -w ./src/index.styl"
+  },
+  "dependencies": {
+    "@material-table/core": "^6.2.11",
+    "@material-table/exporters": "^1.2.18",
+    "axios": "^1.5.1",
+    "bootstrap": "4.6.0",
+    "jspdf": "^2.5.2",
+    "jspdf-autotable": "^3.8.3",
+    "react": "^18.2.0",
+    "react-bootstrap": "1.6.7",
+    "react-bootstrap-sweetalert": "5.2.0",
+    "react-datepicker": "^7.3.0",
+    "react-dom": "^18.2.0",
+    "react-dropzone": "^14.2.3",
+    "react-export-table-to-excel": "^1.0.6",
+    "react-feather": "2.0.10",
+    "react-hook-form": "7.34.2",
+    "react-number-format": "^5.3.1",
+    "react-recompose": "^0.33.0",
+    "react-router-dom": "6.3.0",
+    "react-select": "^5.8.0",
+    "react-to-print": "^2.14.15",
+    "react-toastify": "9.0.8",
+    "uuid": "^9.0.1",
+    "vite-plugin-svgr": "^4.1.0"
+  },
+  "devDependencies": {
+    "@types/react": "^18.2.15",
+    "@types/react-dom": "^18.2.7",
+    "@vitejs/plugin-react-swc": "^3.3.2",
+    "eslint": "^8.45.0",
+    "eslint-plugin-react": "^7.32.2",
+    "eslint-plugin-react-hooks": "^4.6.0",
+    "eslint-plugin-react-refresh": "^0.4.3",
+    "vite": "^4.4.5"
+  }
+}

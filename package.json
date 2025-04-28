@@ -19,6 +19,7 @@
     "jspdf": "^2.5.2",
     "jspdf-autotable": "^3.8.3",
     "react": "^18.2.0",
+    "react-apexcharts": "^1.7.0",
     "react-bootstrap": "1.6.7",
     "react-bootstrap-sweetalert": "5.2.0",
     "react-datepicker": "^7.3.0",

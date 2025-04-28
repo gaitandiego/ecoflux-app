@@ -22,7 +22,7 @@ const LoginBase = props => {
 
 	useEffect(() => {
 		if (authUser) {
-			props.navigate(ROUTES.USUARIOS);
+			props.navigate(ROUTES.RECOLECCIONES);
 		}
 	}, [authUser])
 

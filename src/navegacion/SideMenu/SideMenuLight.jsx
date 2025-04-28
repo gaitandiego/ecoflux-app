@@ -16,9 +16,17 @@ function SideMenuLight({ sideMenu }) {
             <Navbar className={`sidemenu ${sideMenu ? 'hide-nav-title' : ''}`}  >
                 <Navbar.Collapse>
                     <Nav>
+                        <NavLink to={ROUTES.RECOLECCIONES} className="nav-link">
+                            <Icon.Trash2
+                                className="icon"
+                            />
+                            <span className="title">
+                                {TEXT.MENU_RECOLECCIONES}
+                            </span>
+                        </NavLink>
 
                         <NavLink to={ROUTES.USUARIOS} className="nav-link">
-                            <Icon.Tag
+                            <Icon.Users
                                 className="icon"
                             />
                             <span className="title">
@@ -26,6 +34,14 @@ function SideMenuLight({ sideMenu }) {
                             </span>
                         </NavLink>
 
+                        <NavLink to={ROUTES.REPORTE_RECOLECCION} className="nav-link">
+                            <Icon.BookOpen
+                                className="icon"
+                            />
+                            <span className="title">
+                                {TEXT.MENU_REPORTE_RECOLECCION}
+                            </span>
+                        </NavLink>
 
                     </Nav>
                 </Navbar.Collapse>

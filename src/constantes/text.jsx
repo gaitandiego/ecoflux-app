@@ -3,14 +3,8 @@ export const MENU_INICIAR = 'Ingresar';
 export const MENU_HOME = 'Inicio';
 export const MENU_USUARIOS = 'Usuarios';
 export const MENU_ADMINISTRADORES = 'Usuarios';
-export const MENU_CLIENTES = 'Clientes';
-export const MENU_PROVEEDORES = 'Inversionistas';
-export const MENU_AJUSTES_GENERALES = 'Ajustes Generales';
-export const MENU_MEDIOS_PAGO = 'Medios Pago';
-export const MENU_ROLES = 'Roles';
-export const MENU_METODOS_PAGO = 'Medios de pago';
-export const MENU_CREDITOS = 'Creditos';
-export const MENU_ABONOS = 'Abonos';
+export const MENU_RECOLECCIONES = 'Recolecciones';
+export const MENU_REPORTE_RECOLECCION = 'Reporte Recolección';
 
 /** Footer **/
 export const FOOTER_COPI = `© ${new Date().getFullYear()} Todos los derechos reservados.`;
@@ -417,15 +411,6 @@ export const ROLES_EDIT_TITULO = 'Editar rol'
 export const ROLES_FORM_EDIT_TITULO = 'Editar rol'
 
 
-/** Proveedores **/
-export const PROVEEDORES_TITULO = 'Inversionistas'
-export const PROVEEDORES_TITULO_TABLA = 'Lista de Inversionistas'
-export const PROVEEDORES_ADD_TITULO = 'Agregar Inversionista'
-export const PROVEEDORES_FORM_TITULO = 'Agregar Inversionista'
-export const PROVEEDORES_EDIT_TITULO = 'Editar Inversionista'
-export const PROVEEDORES_FORM_EDIT_TITULO = 'Editar Inversionista'
-
-
 /** Usuarios **/
 export const USUARIOS_TITULO = 'Usuarios'
 export const USUARIOS_TITULO_TABLA = 'Lista de usuarios'
@@ -434,37 +419,13 @@ export const USUARIOS_FORM_TITULO = 'Agregar estado'
 export const USUARIOS_EDIT_TITULO = 'Editar estado'
 export const USUARIOS_FORM_EDIT_TITULO = 'Editar estado'
 
-/** Abonos **/
-export const ABONOS_TITULO = 'Abonos'
-export const ABONOS_TITULO_TABLA = 'Lista de abonos'
-export const ABONOS_ADD_TITULO = 'Agregar abonos'
-export const ABONOS_FORM_TITULO = 'Agregar abono'
-export const ABONOS_EDIT_TITULO = 'Ver abonos'
-export const ABONOS_FORM_EDIT_TITULO = 'Ver abono'
+export const RECOLECCIONES_TITULO = 'Recolecciones'
+export const RECOLECCIONES_TITULO_TABLA = 'Lista de recolecciones'
+export const RECOLECCIONES_ADD_TITULO = 'Agregar recolecciones'
+export const RECOLECCIONES_FORM_TITULO = 'Agregar recolecciones'
+export const RECOLECCIONES_EDIT_TITULO = 'Editar recolecciones'
+export const RECOLECCIONES_FORM_EDIT_TITULO = 'Editar recolecciones'
 
-/** Atributos **/
-export const METODOS_PAGOS_TITULO = 'Medios de pago'
-export const METODOS_PAGOS_TITULO_TABLA = 'Lista de medios de pago'
-export const METODOS_PAGOS_ADD_TITULO = 'Agregar medios de pago'
-export const METODOS_PAGOS_FORM_TITULO = 'Agregar medio de pago'
-export const METODOS_PAGOS_EDIT_TITULO = 'Editar medios de pago'
-export const METODOS_PAGOS_FORM_EDIT_TITULO = 'Editar medio de pago'
-
-/** Clientes **/
-export const CLIENTES_TITULO = 'Clientes'
-export const CLIENTES_TITULO_TABLA = 'Lista de clientes'
-export const CLIENTES_ADD_TITULO = 'Agregar clientes'
-export const CLIENTES_FORM_TITULO = 'Agregar cliente'
-export const CLIENTES_EDIT_TITULO = 'Editar clientes'
-export const CLIENTES_FORM_EDIT_TITULO = 'Editar cliente'
-
-/** Creditos **/
-export const CREDITOS_TITULO = 'Creditos'
-export const CREDITOS_TITULO_TABLA = 'Lista de creditos'
-export const CREDITOS_ADD_TITULO = 'Agregar creditos'
-export const CREDITOS_FORM_TITULO = 'Agregar credito'
-export const CREDITOS_EDIT_TITULO = 'Editar creditos'
-export const CREDITOS_FORM_EDIT_TITULO = 'Editar credito'
 
 /** Alertas **/
 export const ALERT_SELECCIONAR_CAJERO_ERROR = 'debe serleccionar algún cajero'

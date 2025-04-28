@@ -14,6 +14,12 @@ import RecuperarPage from '../Acceso/recuperar';
 import UsuariosPage from '../Usuarios';
 import UsuariosAddPage from '../Usuarios/agregar';
 import UsuariosEditPage from '../Usuarios/editar';
+import RecoleccionesPage from '../Recolecciones';
+import RecoleccionesAddPage from '../Recolecciones/agregar';
+import RecoleccionesEditPage from '../Recolecciones/editar';
+
+import ReporteRecoleccionPage from '../ReporteRecoleccion';
+
 
 import NotFound from '../NotFound';
 
@@ -35,6 +41,12 @@ const App = () => (
 			<Route path={ROUTES.USUARIOS} element={<UseValidateRoutes ><UsuariosPage /></UseValidateRoutes>} />
 			<Route path={ROUTES.USUARIOS_ADD} element={<UseValidateRoutes ><UsuariosAddPage /></UseValidateRoutes>} />
 			<Route path={ROUTES.USUARIOS_EDIT} element={<UseValidateRoutes ><UsuariosEditPage /></UseValidateRoutes>} />
+
+			<Route path={ROUTES.RECOLECCIONES} element={<UseValidateRoutes ><RecoleccionesPage /></UseValidateRoutes>} />
+			<Route path={ROUTES.RECOLECCIONES_ADD} element={<UseValidateRoutes ><RecoleccionesAddPage /></UseValidateRoutes>} />
+			<Route path={ROUTES.RECOLECCIONES_EDIT} element={<UseValidateRoutes ><RecoleccionesEditPage /></UseValidateRoutes>} />
+
+			<Route path={ROUTES.REPORTE_RECOLECCION} element={<UseValidateRoutes ><ReporteRecoleccionPage /></UseValidateRoutes>} />
 			{/* Rutas protegidas */}
 
 			<Route path='*' element={<NotFound />} />

@@ -14,3 +14,9 @@ export const USUARIOS_ADD = '/usuarios/agregar';
 export const CLIENTES = '/clientes';
 export const CLIENTES_EDIT = '/clientes/editar/:id';
 export const CLIENTES_ADD = '/clientes/agregar';
+
+export const RECOLECCIONES = '/recolecciones';
+export const RECOLECCIONES_EDIT = '/recolecciones/editar/:id';
+export const RECOLECCIONES_ADD = '/recolecciones/agregar';
+
+export const REPORTE_RECOLECCION = '/reporte-recoleccion';
